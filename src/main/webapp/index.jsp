@@ -45,5 +45,31 @@
 						  </c:choose></h1>
 
 
+
+<!--  Parte 2 -->
+
+
+	
+<c:set value="10" var="valor"/>  
+<c:choose>  
+<c:when test="${valor%2==0}">  
+<c:out value="${valor} é um numero Par"/> 
+</c:when>  
+<c:otherwise>  
+<c:out value="${valor} é um numero Impar "></c:out>  
+</c:otherwise>  
+</c:choose> 
+	
+	
+	<c:set var="numeroInicial"  value="1033000000"/>  
+<p>O valor é: <c:out value="${numeroInicial}"/></p>  
+<c:remove var="numeroInicial"/>  
+<p>Após a utilização da tag "remove", o valor passou a ser: <c:out value="${numeroInicial}"/></p>  
+
+<c:set var="instrutor" value="1"/>  
+<c:if test="${instrutor == 1} ">  
+   <p><c:out value="${instrutor} Olá " /><p> 
+</c:if>
+<H1> </H1>
 </body>
 </html>
